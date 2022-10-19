@@ -26,5 +26,5 @@ Example of data inside offsets_bytes.txt:
   0xa 0xb 0xc 0xd - rand 0x4b rand 0x2b
 
 To test, go to the Testing folder, and type the following: 
-  python3 ../autohexrepl.py -hx test_file.auth -of offsets_bytes.txt
+  python3 ../autohexrepl.py -hx test_hex_file.auth -of offsets_bytes.txt
 
