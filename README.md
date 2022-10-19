@@ -1,6 +1,4 @@
 # HexAutoReplace
-An automated hex editor designed to replace bytes.
-
 A small script created for personal use.
 The purpose of this program is to automatically edit (replace) bytes using a file with offsets and bytes (in hexadecimal form).
 
@@ -19,4 +17,15 @@ optional arguments:
 
 example: autohexrepl.py -hx name_editable_file -of offsets_bytes.txt
 ```
-After autocorrect of the specified bytes, the data will be output in hexadecimal format, where the replaced bytes will be highlighted on a purple background:
+After autocorrect of the specified bytes, the data will be output in hexadecimal format, 
+where the replaced bytes will be highlighted on a purple background:
+![hex-data](https://github.com/d0x65viant/Images/blob/main/hex.png)
+
+To cancel the output of the edited copy, you must use the parameter: **--no_output**.
+
+
+For byte autocorrect, a file with offsets and bytes separated by a hyphen is used, the number of offsets must be equal to the number of bytes:
+
+![offsets-bytes file](https://github.com/d0x65viant/Images/blob/main/offsets.png)
+
+**rand** - means that a random byte will be generated and replaced with the specified one.
