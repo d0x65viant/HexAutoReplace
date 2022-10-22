@@ -50,7 +50,7 @@ class OffSetsGenerator:
                                   '\nthe prefix [0x..] is missing!')
                             return
                         
-                        if  (len(hexnum.lstrip('0x'))<1 or len(hexnum.lstrip('0x'))>2 or len(two_num)!=1 or False in two_num):
+                        if  (len(hexnum.lstrip('0x'))<1 or len(hexnum.lstrip('0x'))>2 and _list==list_byte or len(two_num)!=1 or False in two_num):
                             print('ERROR: Incorrect byte writing format, each byte must '
                                   '\nbe written as a two-digit number in '
                                   '\nhexadecimal notation with the prefix [0x]!')
